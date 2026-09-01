@@ -31,7 +31,7 @@ a { color: var(--green); }
 .nav,
 .main,
 .site-footer {
-  width: min(1040px, calc(100% - 40px));
+  width: min(960px, calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -67,13 +67,14 @@ a { color: var(--green); }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(210px, 290px);
+  grid-template-columns: minmax(0, 520px) minmax(210px, 278px);
   align-items: center;
-  gap: 58px;
-  min-height: 560px;
+  justify-content: center;
+  gap: 42px;
+  min-height: 520px;
 }
 
-.hero-copy { max-width: 570px; }
+.hero-copy { max-width: 520px; }
 
 .eyebrow {
   color: var(--gold);
@@ -86,8 +87,8 @@ a { color: var(--green); }
 h1 {
   margin: 10px 0 16px;
   font-family: var(--serif);
-  font-size: clamp(48px, 8vw, 86px);
-  line-height: 0.96;
+  font-size: clamp(44px, 7vw, 74px);
+  line-height: 1;
   letter-spacing: 0;
 }
 
@@ -108,7 +109,7 @@ li { font-size: 17px; }
 
 .lede {
   color: var(--muted);
-  font-size: 22px;
+  font-size: 20px;
   max-width: 680px;
   line-height: 1.55;
 }
@@ -132,7 +133,7 @@ li { font-size: 17px; }
 .phone-showcase { display: flex; justify-content: center; }
 
 .device-frame {
-  width: min(100%, 258px);
+  width: min(100%, 250px);
   aspect-ratio: 390 / 844;
   overflow: hidden;
   border: 8px solid #10253b;
