@@ -65,7 +65,7 @@ a { color: var(--green); }
 .main { padding: 56px 0 72px; }
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 260px);
   align-items: center;
   gap: 38px;
 }
@@ -111,7 +111,7 @@ li { font-size: 17px; }
 .phone-showcase { display: flex; justify-content: center; }
 
 .device-frame {
-  width: min(100%, 245px);
+  width: min(100%, 190px);
   aspect-ratio: 390 / 844;
   overflow: hidden;
   border: 8px solid #10253b;
@@ -208,5 +208,5 @@ li { font-size: 17px; }
     grid-template-columns: 1fr;
   }
 
-  .device-frame { width: min(82vw, 230px); }
+  .device-frame { width: min(70vw, 185px); }
 }
