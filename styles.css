@@ -65,7 +65,7 @@ a { color: var(--green); }
 .main { padding: 56px 0 72px; }
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(210px, 300px);
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 270px);
   align-items: center;
   gap: 30px;
 }
@@ -120,7 +120,7 @@ li { font-size: 17px; }
 .phone-showcase { display: flex; justify-content: center; }
 
 .device-frame {
-  width: min(100%, 190px);
+  width: min(100%, 245px);
   aspect-ratio: 390 / 844;
   overflow: hidden;
   border: 8px solid #10253b;
@@ -218,5 +218,5 @@ li { font-size: 17px; }
   }
 
   .simulator-preview { width: min(74vw, 285px); }
-  .device-frame { width: min(70vw, 185px); }
+  .device-frame { width: min(72vw, 245px); }
 }
