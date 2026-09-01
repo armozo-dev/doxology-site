@@ -108,132 +108,23 @@ li { font-size: 17px; }
   max-width: 680px;
 }
 
-.phone-showcase {
-  position: relative;
-  min-height: 460px;
-}
+.phone-showcase { display: flex; justify-content: center; }
 
-.phone,
-.mini-phone {
-  background: linear-gradient(180deg, #fffdf8 0%, #f7efe2 100%);
-  border: 1px solid rgba(23, 50, 79, 0.12);
-  box-shadow: 0 22px 55px var(--shadow);
-}
-
-.phone {
-  position: absolute;
-  width: 236px;
-  min-height: 456px;
-  padding: 24px 18px;
-  border-radius: 34px;
-}
-
-.phone-primary {
-  right: 118px;
-  top: 0;
-}
-
-.phone-secondary {
-  right: 0;
-  top: 84px;
-  min-height: 360px;
-  transform: scale(0.86);
-  transform-origin: top right;
-}
-
-.phone-bar {
-  width: 58px;
-  height: 5px;
-  margin: 0 auto 28px;
-  border-radius: 999px;
-  background: rgba(23, 50, 79, 0.18);
-}
-
-.app-topline,
-.rhythm-time {
-  color: var(--gold);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.app-title {
-  margin: 8px 0 18px;
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 30px;
-  line-height: 1.05;
-}
-
-.rhythm-card {
-  display: grid;
-  gap: 3px;
-  margin-top: 12px;
-  padding: 16px;
-  border: 1px solid rgba(23, 50, 79, 0.1);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.76);
-}
-
-.rhythm-card strong {
-  font-size: 17px;
-  line-height: 1.2;
-}
-
-.rhythm-card small {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.rhythm-card.active {
-  background: #fff8e7;
-  border-color: rgba(184, 137, 47, 0.3);
-}
-
-.prayer-step {
-  display: inline-flex;
-  margin: 18px 0 10px;
-  padding: 7px 10px;
-  border-radius: 999px;
-  background: rgba(66, 111, 90, 0.12);
-  color: var(--green);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.phone-secondary p {
-  margin: 8px 0 22px;
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  line-height: 1.42;
-}
-
-.progress-line {
-  height: 6px;
+.device-frame {
+  width: min(100%, 310px);
+  max-height: 650px;
   overflow: hidden;
-  border-radius: 999px;
-  background: rgba(23, 50, 79, 0.12);
+  border: 10px solid #10253b;
+  border-radius: 38px;
+  background: #10253b;
+  box-shadow: 0 26px 70px var(--shadow);
 }
 
-.progress-line span {
+.device-frame img {
   display: block;
-  width: 56%;
-  height: 100%;
-  border-radius: inherit;
-  background: var(--green);
-}
-
-.mock-button {
-  margin-top: 22px;
-  padding: 11px 14px;
-  border-radius: 999px;
-  background: var(--ink);
-  color: var(--white);
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
+  width: 100%;
+  height: auto;
+  border-radius: 27px;
 }
 
 .rhythm-section {
@@ -273,66 +164,20 @@ li { font-size: 17px; }
   font-size: 15px;
 }
 
-.mini-phone {
-  width: 100%;
-  max-width: 184px;
-  min-height: 250px;
-  margin: 0 auto;
-  padding: 16px;
-  border-radius: 24px;
+.feature-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 800;
 }
 
-.mini-header {
-  height: 76px;
-  margin: -16px -16px 16px;
-  border-radius: 24px 24px 16px 16px;
-}
-
-.mini-header.gold { background: linear-gradient(135deg, #b8892f, #f2c778); }
-.mini-header.green { background: linear-gradient(135deg, #426f5a, #87a987); }
-.mini-header.blue { background: linear-gradient(135deg, #315f8a, #8ab0c7); }
-
-.mini-title {
-  color: var(--ink);
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.mini-line,
-.journal-rule {
-  height: 8px;
-  width: 64%;
-  margin-top: 10px;
-  border-radius: 999px;
-  background: rgba(23, 50, 79, 0.13);
-}
-
-.mini-line.wide,
-.journal-rule { width: 88%; }
-.journal-rule.short { width: 54%; }
-
-.mini-pill {
-  margin-top: 14px;
-  padding: 9px 10px;
-  border-radius: 999px;
-  background: #fff8e7;
-  color: var(--ink);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.mini-pill.muted {
-  margin-top: 8px;
-  background: rgba(66, 111, 90, 0.12);
-}
-
-.reading-block {
-  height: 56px;
-  margin-top: 16px;
-  border-left: 4px solid var(--gold);
-  border-radius: 6px;
-  background: rgba(184, 137, 47, 0.12);
-}
+.feature-icon.gold { background: var(--gold); }
+.feature-icon.green { background: var(--green); }
+.feature-icon.blue { background: var(--blue); }
 
 .panel {
   margin-top: 28px;
@@ -376,23 +221,5 @@ li { font-size: 17px; }
     grid-template-columns: 1fr;
   }
 
-  .phone-showcase {
-    min-height: 390px;
-    margin-top: 6px;
-  }
-
-  .phone {
-    width: 210px;
-    min-height: 404px;
-  }
-
-  .phone-primary {
-    left: 0;
-    right: auto;
-  }
-
-  .phone-secondary {
-    right: 0;
-    top: 74px;
-  }
+  .device-frame { max-height: 560px; }
 }
