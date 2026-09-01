@@ -65,9 +65,9 @@ a { color: var(--green); }
 .main { padding: 56px 0 72px; }
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
   align-items: center;
-  gap: 48px;
+  gap: 38px;
 }
 
 .hero-copy { max-width: 640px; }
@@ -111,20 +111,22 @@ li { font-size: 17px; }
 .phone-showcase { display: flex; justify-content: center; }
 
 .device-frame {
-  width: min(100%, 310px);
-  max-height: 650px;
+  width: min(100%, 245px);
+  aspect-ratio: 390 / 844;
   overflow: hidden;
-  border: 10px solid #10253b;
-  border-radius: 38px;
+  border: 8px solid #10253b;
+  border-radius: 34px;
   background: #10253b;
-  box-shadow: 0 26px 70px var(--shadow);
+  box-shadow: 0 22px 55px var(--shadow);
 }
 
 .device-frame img {
   display: block;
   width: 100%;
-  height: auto;
-  border-radius: 27px;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .rhythm-section {
@@ -221,5 +223,5 @@ li { font-size: 17px; }
     grid-template-columns: 1fr;
   }
 
-  .device-frame { max-height: 560px; }
+  .device-frame { width: min(82vw, 230px); }
 }
