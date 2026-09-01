@@ -65,12 +65,12 @@ a { color: var(--green); }
 .main { padding: 56px 0 72px; }
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 300px);
   align-items: center;
-  gap: 44px;
+  gap: 30px;
 }
 
-.hero-copy { max-width: 640px; }
+.hero-copy { max-width: 600px; }
 
 .eyebrow {
   color: var(--gold);
@@ -112,7 +112,7 @@ li { font-size: 17px; }
 
 .simulator-preview {
   display: block;
-  width: min(100%, 280px);
+  width: min(100%, 258px);
   height: auto;
   border-radius: 28px;
 }
@@ -217,6 +217,6 @@ li { font-size: 17px; }
     grid-template-columns: 1fr;
   }
 
-  .simulator-preview { width: min(78vw, 300px); }
+  .simulator-preview { width: min(74vw, 285px); }
   .device-frame { width: min(70vw, 185px); }
 }
