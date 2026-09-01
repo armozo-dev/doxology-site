@@ -142,16 +142,16 @@ li { font-size: 17px; }
 .rhythm-section h2 { margin-top: 8px; }
 .rhythm-section p { margin: 0; color: var(--muted); }
 
-.mockup-grid {
+.feature-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin-top: 34px;
 }
 
-.feature-mockup {
+.feature-card {
   display: grid;
-  gap: 16px;
+  gap: 8px;
   align-content: start;
   padding: 22px;
   background: var(--white);
@@ -159,27 +159,12 @@ li { font-size: 17px; }
   border-radius: 8px;
 }
 
-.feature-mockup h3 { margin: 0; }
-.feature-mockup p {
+.feature-card h3 { margin: 0; }
+.feature-card p {
   margin: 0;
   color: var(--muted);
   font-size: 15px;
 }
-
-.feature-icon {
-  display: grid;
-  place-items: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  color: var(--white);
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.feature-icon.gold { background: var(--gold); }
-.feature-icon.green { background: var(--green); }
-.feature-icon.blue { background: var(--blue); }
 
 .panel {
   margin-top: 28px;
@@ -219,7 +204,7 @@ li { font-size: 17px; }
 
   .hero,
   .rhythm-section,
-  .mockup-grid {
+  .feature-grid {
     grid-template-columns: 1fr;
   }
 
