@@ -67,8 +67,8 @@ a { color: var(--green); }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 520px) minmax(210px, 278px);
-  align-items: center;
+  grid-template-columns: minmax(0, 500px) minmax(310px, 390px);
+  align-items: start;
   justify-content: center;
   gap: 42px;
   min-height: 520px;
@@ -125,16 +125,19 @@ li { font-size: 17px; }
 
 .simulator-preview {
   display: block;
-  width: min(100%, 258px);
+  width: clamp(300px, 30vw, 360px);
   height: auto;
   border-radius: 28px;
 }
 
-.phone-showcase { display: flex; justify-content: center; }
+.phone-showcase {
+  display: flex;
+  justify-content: center;
+}
 
 .device-frame {
-  width: min(100%, 258px);
-  aspect-ratio: 800 / 1626;
+  width: clamp(310px, 30vw, 390px);
+  aspect-ratio: 800 / 1900;
   overflow: visible;
   border: 0;
   border-radius: 0;
@@ -153,26 +156,39 @@ li { font-size: 17px; }
 
 .rhythm-section {
   display: grid;
-  grid-template-columns: 0.9fr 1fr;
-  gap: 54px;
-  margin-top: 26px;
-  padding: 38px 0;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-width: 520px;
+  margin-top: 40px;
+  padding: 28px 0 20px;
+  border-top: 1px solid var(--line);
+}
+
+.rhythm-section h2 { margin-top: 8px; }
+.rhythm-section p {
+  max-width: 520px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.rhythm-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  max-width: 520px;
+  margin-top: 8px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
-.rhythm-section h2 { margin-top: 8px; }
-.rhythm-section p { margin: 0; color: var(--muted); }
-
-.rhythm-list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px;
-  margin-top: 42px;
+.rhythm-list article {
+  padding: 20px 0;
 }
 
-.rhythm-list article {
-  padding-top: 18px;
+.rhythm-list article + article {
+  margin-top: 0;
   border-top: 1px solid var(--line);
 }
 
@@ -185,9 +201,9 @@ li { font-size: 17px; }
 }
 
 .rhythm-list h3 {
-  margin: 10px 0 8px;
+  margin: 8px 0 6px;
   font-family: var(--serif);
-  font-size: 23px;
+  font-size: 22px;
   line-height: 1.15;
 }
 
