@@ -139,7 +139,7 @@ li { font-size: 17px; }
   border: 0;
   border-radius: 0;
   background: transparent;
-  box-shadow: 0 22px 55px var(--shadow);
+  box-shadow: none;
 }
 
 .device-frame img {
