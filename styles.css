@@ -137,7 +137,7 @@ li { font-size: 17px; }
 
 .device-frame {
   width: clamp(310px, 30vw, 390px);
-  aspect-ratio: 800 / 1900;
+  aspect-ratio: 800 / 1920;
   overflow: visible;
   border: 0;
   border-radius: 0;
