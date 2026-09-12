@@ -63,11 +63,11 @@ a { color: var(--green); }
   text-decoration: none;
 }
 
-.main { padding: 72px 0 64px; }
+.main { padding: 56px 0 64px; }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 500px) minmax(310px, 390px);
+  grid-template-columns: minmax(0, 500px) minmax(280px, 340px);
   align-items: start;
   justify-content: center;
   gap: 42px;
@@ -136,7 +136,7 @@ li { font-size: 17px; }
 }
 
 .device-frame {
-  width: clamp(310px, 30vw, 390px);
+  width: clamp(280px, 24vw, 340px);
   aspect-ratio: 800 / 1920;
   overflow: visible;
   border: 0;
