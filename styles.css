@@ -362,5 +362,7 @@ li { font-size: 17px; }
 .availability { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 16px; }
 .store-badge { display: inline-block; padding: 12px 0; line-height: 0; }
 .store-badge img { height: 48px; width: auto; display: block; }
-.availability .devices { display: inline-flex; align-items: center; gap: 12px; }
-.availability .devices img { width: 160px; height: auto; display: block; }
+/* Three devices (iPad, Duo, iPhone) in place of the single phone, owner 2026-11-08 */
+.hero { grid-template-columns: minmax(0, 480px) minmax(320px, 600px); }
+.device-frame.devices { width: 100%; aspect-ratio: 1760 / 1000; margin-top: 24px; }
+@media (max-width: 860px) { .device-frame.devices { width: min(100%, 520px); } }
