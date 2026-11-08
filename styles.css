@@ -363,6 +363,6 @@ li { font-size: 17px; }
 .store-badge { display: inline-block; padding: 12px 0; line-height: 0; }
 .store-badge img { height: 48px; width: auto; display: block; }
 /* Three devices (iPad, Duo, iPhone) in place of the single phone, owner 2026-11-08 */
-.hero { grid-template-columns: minmax(0, 480px) minmax(320px, 600px); }
-.device-frame.devices { width: 100%; aspect-ratio: 1760 / 1000; margin-top: 24px; }
-@media (max-width: 860px) { .device-frame.devices { width: min(100%, 520px); } }
+@media (min-width: 861px) { .hero { grid-template-columns: minmax(0, 500px) minmax(300px, 440px); } }
+.device-frame.devices { width: 100%; aspect-ratio: 1000 / 1060; margin-top: 8px; }
+@media (max-width: 860px) { .device-frame.devices { width: min(100%, 400px); margin: 0 auto; } }
