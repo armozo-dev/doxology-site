@@ -345,3 +345,15 @@ li { font-size: 17px; }
     flex-direction: column;
   }
 }
+
+/* Sources page (2026-11-07): one book per line, the title in the ink colour. */
+.legal-page .source-list {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.legal-page .source-list li { line-height: 1.55; }
+.legal-page .source-list strong { color: var(--ink); font-weight: 600; }
