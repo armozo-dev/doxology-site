@@ -364,5 +364,31 @@ li { font-size: 17px; }
 .store-badge img { height: 48px; width: auto; display: block; }
 /* Three devices (iPad, Duo, iPhone) in place of the single phone, owner 2026-11-08 */
 @media (min-width: 861px) { .hero { grid-template-columns: minmax(0, 500px) minmax(300px, 440px); } }
+.device-frame picture { display: contents; }
 .device-frame.devices { width: 100%; aspect-ratio: 1000 / 1060; margin-top: 8px; }
 @media (max-width: 860px) { .device-frame.devices { width: min(100%, 400px); margin: 0 auto; } }
+
+/* Dark mode (2026-11-10): follows the visitor's system setting. Palette from the app's own night theme
+   (src/theme/colors.ts darkColors): warm near-black page, a slightly lifted card, cream text, the gold and green lifted to read on dark.
+   Contrast (WCAG) is listed in agent/qc/website_dark_mode/README.md. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --ink: #f1e8d6;
+    --muted: #c3b9a6;
+    --line: #3a3329;
+    --paper: #14110d;
+    --white: #1e1a14;
+    --gold: #d9a55c;
+    --green: #9ccfaa;
+    --blue: #9dbbdb;
+    --shadow: rgba(0, 0, 0, 0.5);
+  }
+
+  .legal-page h2 { border-top-color: rgba(58, 51, 41, 0.85); }
+
+  /* The hero shows the app in its own dark theme (devices-hero-dark.png, via <picture>); a soft warm glow sits behind it. */
+  .device-frame.devices {
+    background: radial-gradient(closest-side, rgba(241, 232, 214, 0.08), rgba(241, 232, 214, 0.03) 60%, transparent);
+  }
+}
