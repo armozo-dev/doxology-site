@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Doxology Way</title>
     <meta name="description" content="Doxology Way: daily prayer, Scripture, hymns and the saints of the day in the Orthodox, Catholic, Anglican, Lutheran and Evangelical traditions. Private, offline, no subscription.">
-    <link rel="stylesheet" href="/styles.css?v=devices5-2026-11">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="/styles.css?v=dark2-2026-11">
   </head>
   <body>
     <header class="site-header">
@@ -115,7 +116,10 @@
         </div>
         <div class="phone-showcase" aria-label="Doxology app screen preview">
           <div class="device-frame devices">
-            <img src="/assets/devices-hero.png" width="1000" height="1060" alt="Doxology Way on iPhone Duo, iPhone and iPad: Today in the Catholic, Orthodox and Protestant traditions." />
+            <picture>
+              <source srcset="/assets/devices-hero-dark.png" media="(prefers-color-scheme: dark)" />
+              <img src="/assets/devices-hero.png?v=12-2026-11-10" width="1000" height="1060" alt="Doxology Way on iPhone Duo, iPhone and iPad: Today in the Catholic, Orthodox and Protestant traditions." />
+            </picture>
           </div>
         </div>
       </section>
