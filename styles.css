@@ -392,3 +392,43 @@ li { font-size: 17px; }
     background: radial-gradient(closest-side, rgba(241, 232, 214, 0.08), rgba(241, 232, 214, 0.03) 60%, transparent);
   }
 }
+
+/* Value line under the store badge (Marketing desk, 2026-11-12): the three advantages people should see first. */
+.value-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.value-line li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.value-line li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+@media (max-width: 640px) {
+  .value-line { flex-direction: column; }
+}
+
+/* Google Play badge (2026-11-20, owner: "use the official Google Play badge"): Google's own artwork, unaltered
+   (en_badge_web_generic.png, 646x250, the badge 564x168 inside 41 px of built-in clear space). Sized so the visible badge is
+   48 px tall like the App Store badge; the built-in clear space (about 12 px, a quarter of the height) stays around it, and the
+   negative margin lets that clear space sit in the 16 px gap instead of adding to it. */
+.play-badge { display: inline-block; line-height: 0; margin: 0 calc(-48px * 41 / 168); }
+.play-badge img { display: block; height: calc(48px * 250 / 168); width: auto; }
+.site-footer { flex-wrap: wrap; }
+.trademarks { flex-basis: 100%; margin: 0; font-size: 12px; color: var(--muted); }
