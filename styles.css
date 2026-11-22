@@ -365,7 +365,7 @@ li { font-size: 17px; }
 /* Three devices (iPad, Duo, iPhone) in place of the single phone, owner 2026-11-08 */
 @media (min-width: 861px) { .hero { grid-template-columns: minmax(0, 500px) minmax(300px, 440px); } }
 .device-frame picture { display: contents; }
-.device-frame.devices { width: 100%; aspect-ratio: 1000 / 1060; margin-top: 8px; }
+.device-frame.devices { width: 100%; aspect-ratio: 1200 / 1060; margin-top: 8px; } /* 1200 wide since the Android phone joined, 2026-11-22 */
 @media (max-width: 860px) { .device-frame.devices { width: min(100%, 400px); margin: 0 auto; } }
 
 /* Dark mode (2026-11-10): follows the visitor's system setting. Palette from the app's own night theme
